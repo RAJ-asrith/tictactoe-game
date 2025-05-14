@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Tic Tac Toe</h1>
+
+    <div class="mode-select">
+      <label>
+        <input type="radio" name="mode" value="pvp" checked /> 2 Player
+      </label>
+      <label>
+        <input type="radio" name="mode" value="ai" /> Play vs AI
+      </label>
+    </div>
+
+    <div class="board" id="board"></div>
+
+    <div class="status" id="status">Player X's turn</div>
+
+    <div class="scores">
+      <p>Player X: <span id="scoreX">0</span></p>
+      <p>Player O: <span id="scoreO">0</span></p>
+      <p>Ties: <span id="scoreTies">0</span></p>
+    </div>
+
+    <button id="reset">Reset Game</button>
+  </div>
+
+  <!-- Popup -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h2 id="popup-message"></h2>
+      <button id="play-again">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
